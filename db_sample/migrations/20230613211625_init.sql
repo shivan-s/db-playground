@@ -12,7 +12,17 @@ CREATE TABLE books (
     FOREIGN KEY (author_id) REFERENCES authors (id)
     ON DELETE CASCADE
 );
+
+INSERT INTO authors (name)
+VALUES (('Alice'), ('Bob'));
+
+INSERT INTO books (title, author_id)
+VALUES (
+    ('How To Python', 1),
+    ('Using Docker', 1),
+    ('Database Guide', 2)
+);
 -- migrate:down
 
-DROP TABLE authors;
 DROP TABLE books;
+DROP TABLE authors;
