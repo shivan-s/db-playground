@@ -32,7 +32,7 @@ down:
 	@echo "Migrating down..." && \
 	docker-compose run dbmate -e "DATABASE_URL" down
 
-.PHONY: new
-new:
-	@echo "Migrating down..." && \ 
-	docker-compose run dbmate -e "DATABASE_URL" new
+.PHONY: new-migration
+new-migration:
+	@echo "New migrations" && \
+	docker-compose run dbmate -e "DATABASE_URL" new $(NEW)

@@ -14,14 +14,12 @@ CREATE TABLE books (
 );
 
 INSERT INTO authors (name)
-VALUES (('Alice'), ('Bob'));
+VALUES ('Alice'), ('Bob');
 
 INSERT INTO books (title, author_id)
-VALUES (
-    ('How To Python', 1),
-    ('Using Docker', 1),
-    ('Database Guide', 2)
-);
+VALUES ('How To Python', 1),
+('Using Docker', 1),
+('Database Guide', 2);
 -- migrate:down
 
 DROP TABLE books;
