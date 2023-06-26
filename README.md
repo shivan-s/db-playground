@@ -2,6 +2,8 @@
 
 ## Purpose
 
+I was in a situation where I had to use SQL on a shared staging database. I was scared.
+
 The purpose of this repository is to become more familiar with [PostgreSQL](https://www.postgresql.org/) and [dbmate](https://github.com/amacneil/dbmate) in both writing migraitions and writing SQL queries.
 
 Personally, I have used a lot of ORMs and SQL builders in the past on personal projects. I'm not so confident with pure SQL on top of working with a live database that others would potentially use.
